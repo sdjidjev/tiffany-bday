@@ -127,9 +127,7 @@ const App: React.FC = () => {
           const ballRow = ball.ballRow
           setRowCount((prevRowCounts) => {
             const updatedRows = [...prevRowCounts]
-            console.log('ballRow', ballRow);
             updatedRows[ball.ballRow] = prevRowCounts[ball.ballRow] - 1
-            console.log('updated Rows', updatedRows)
             if (updatedRows[ball.ballRow] == 0) {
               setActiveRow((activeRow) => activeRow - 1)
             }
@@ -216,10 +214,11 @@ const App: React.FC = () => {
     flexDirection: 'column',
     fontSize: 28,
   }
+  const publicUrl = "https://raw.githubusercontent.com/sdjidjev/tiffany-bday/master/public/momo-dialogue.png";
   if (!gameStarted) {
     return (
       <div style={dialogueStyle}>
-        <img style={imgStyle} src="/momo-dialogue.png" />
+        <img style={imgStyle} src={publicUrl} />
         <p>
           Hey it's me, Momo!
         </p>
@@ -258,12 +257,12 @@ const App: React.FC = () => {
   } else {
     return (
       <div style={dialogueStyle}>
-        <img style={imgStyle} src="/momo-dialogue.png" />
+        <img style={imgStyle} src={publicUrl} />
         <p>
           Thank you for helping me out.
           <br /><br />Another successful day of eating human food!
         </p>
-        <button  style={{ marginBottom: 28, }} className="modern-button" onClick={startGameAgain}>
+        <button style={{ marginBottom: 28, }} className="modern-button" onClick={startGameAgain}>
           Play again?
         </button>
         <p style={{ fontSize: 16 }}>

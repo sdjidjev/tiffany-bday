@@ -50,11 +50,10 @@ const DraggableStraw: React.FC<DraggableStrawProps> = ({ width, heightOffset, po
     position: 'absolute' as 'absolute',
   };
 
-
-
+  const publicUrl = "https://raw.githubusercontent.com/sdjidjev/tiffany-bday/master/public/momo-cropped.png";
   return (
   <div ref={setNodeRef} style={refStyle} {...attributes} {...listeners}>
-    <img style={imageStyle} src="/momo-cropped.png" />
+    <img style={imageStyle} src={publicUrl} />
     <div style={strawStyle}></div>
   </div>
   );
