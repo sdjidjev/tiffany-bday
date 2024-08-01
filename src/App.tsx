@@ -174,7 +174,6 @@ const App: React.FC = () => {
     const { delta } = event;
     setStrawPosition((prev) => {
       const newPosition = { left: prev.left + delta.x, top: 0 }
-      suckBoba(newPosition)
       return newPosition;
     });
   };
@@ -183,6 +182,7 @@ const App: React.FC = () => {
   useEffect(() => {
     var suckBobaInterval: string | number | NodeJS.Timeout | undefined;
     if (isDraggingStraw) {
+      suckBoba(positionRef.current);
       suckBobaInterval = setInterval(() => {
         suckBoba(positionRef.current);
       }, 500)

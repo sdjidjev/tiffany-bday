@@ -21,6 +21,7 @@ const DraggableStraw: React.FC<DraggableStrawProps> = ({ width, heightOffset, po
   const strawTopOffset = 220;
 
   const refStyle: CSSProperties = {
+    touchAction: 'none',
     zIndex: 2,
     width,
     top: 0,
