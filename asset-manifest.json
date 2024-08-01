@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/tiffany-bday/static/css/main.95510ac4.css",
-    "main.js": "/tiffany-bday/static/js/main.26d25861.js",
+    "main.js": "/tiffany-bday/static/js/main.b6e5c1bb.js",
     "static/js/453.7238a33c.chunk.js": "/tiffany-bday/static/js/453.7238a33c.chunk.js",
     "index.html": "/tiffany-bday/index.html",
     "main.95510ac4.css.map": "/tiffany-bday/static/css/main.95510ac4.css.map",
-    "main.26d25861.js.map": "/tiffany-bday/static/js/main.26d25861.js.map",
+    "main.b6e5c1bb.js.map": "/tiffany-bday/static/js/main.b6e5c1bb.js.map",
     "453.7238a33c.chunk.js.map": "/tiffany-bday/static/js/453.7238a33c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.95510ac4.css",
-    "static/js/main.26d25861.js"
+    "static/js/main.b6e5c1bb.js"
   ]
 }
