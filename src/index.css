@@ -44,7 +44,7 @@ p {
 html, body, #root {
   background-color: #e8cbb0;
   width: 100%;
-  height: 100dvh;
+  height: 100vh;
   margin: 0;
   padding: 0;
   overflow: hidden;
