@@ -34,6 +34,7 @@ const DraggableStraw: React.FC<DraggableStrawProps> = ({ width, heightOffset, po
   }
 
   const strawStyle: CSSProperties = {
+    touchAction: 'none',
     width: '100%',
     height: '100%',
     top: strawTopOffset,
@@ -44,6 +45,7 @@ const DraggableStraw: React.FC<DraggableStrawProps> = ({ width, heightOffset, po
   };
 
   const imageStyle: CSSProperties = {
+    touchAction: 'none',
     top: 0,
     height: 250,
     width: "auto",
